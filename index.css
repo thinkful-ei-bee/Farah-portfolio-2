@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+/* ================
+   MAIN PAGE CSS
+   ================ */
+#main-page #container{
+  display: flex;
+  flex-direction: column;
+}
+
+  #main-page body {
+    font-family: "Open Sans";
+    font-size: 20px;
+  }
+
+ nav{
+      background: none;
+      float: right;
+  }
+  
+ nav p{
+      font-size: 15px;
+      margin-right: 10px;
+      margin-top: 10px;
+      color: white;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+  }
+
+#main-page h1{
+    font-size: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Inconsolata', monospace;
+  }
+
+  .bio p{
+      font-size: 15px;
+      line-height: 1.6;
+      letter-spacing: 1px;
+      width: 250px;
+      margin-top: 50px;
+  }
+
+  #typewriter{
+    height: 200px;
+    font-family: "Courier";
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+  }
+
+  .clear {
+      clear: both;
+  }
+
+  header{
+    background: linear-gradient(black, #585858);
+    color: white; 
+    font-size: 20px;
+    height: 580px;
+    padding-left: 50px;
+  }
+
+  #main-page section{
+      height: 350px;
+      padding-top: 30px;
+      border-top: 1px solid grey;
+  }
+
+  footer, section:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  footer{
+      padding: 50px;
+      text-align: right;
+      border-top: 1px solid grey;
+  }
+
+  .project-link{
+    width: 0;
+    height: 0;
+    border-top: 45px solid transparent;
+    border-left: 70px solid black;
+    border-bottom: 45px solid transparent;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+
+  #main-page a:hover{
+    transform: scale(1.1);
+  }
+
+  .section1{
+     background: url('./images/theoffice.jpg') no-repeat; 
+      filter: grayscale(100%);
+      background-size: cover;
+      opacity: 0.4;
+  }
+
+  .app-description{
+    width: fit-content;
+    margin-left: 30px;
+    font-family: 'Inconsolata', monospace;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .see-code{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .see-code a:hover{
+    text-decoration: underline;
+  }
+
+  .js-contact-button{
+    margin-right: 20px;
+    margin-top: 10px;
+    background: none;
+    border: none; 
+    color: white; 
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+  }
+
+  .js-contact-button:hover{
+    cursor: pointer;
+  }
+
+/* ================
+   CONTACT PAGE CSS
+   ================ */
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#contact-page h1{
+    margin-top: 250px;
+    margin-left: 100px;
+    font-size: 35px;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+#contact-page .left-pane{
+    background: #202020;
+    color: white;
+    height: 730px;
+    width: 40%;
+    float: left;
+    border-collapse: collapse;
+}
+
+#contact-page .right-pane{
+    background: green;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+}
+
+#contact-page .email, .linkedin, .github{
+    height: 243.3px;
+    line-height: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    border-bottom: 1px solid black;
+    color: white;
+    font-size: 25px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.email{
+    background-color: #202020;
+}
+
+.linkedin{
+    background-color:#181818;
+}
+
+.github{
+    background-color: #282828;
+}
+
+#contact-page a {
+    color: grey;
+    text-decoration: none;
+}
+
+#contact-page a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.return {
+    margin-left: 20px;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+.return:hover {
+  cursor: pointer;
+} 
