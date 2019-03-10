@@ -118,18 +118,11 @@ function topArrow() {
   setTimeout('topArrow()', 1600);
 }
 
-function handleScrollArrow(){
-  $('#topArrow').animate({
-    scrollTop: $('.image-text').offset().top
-  });
-}
-
 function main(){
   renderPortfolio();
   handleContactButton();
   handleReturnButton();
   topArrow();
-  handleScrollArrow();
 }
 
 $(main);

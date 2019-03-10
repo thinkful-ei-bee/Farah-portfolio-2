@@ -71,6 +71,7 @@
     font-size: 20px;
     height: 750px;
     padding-left: 50px;
+    
   }
 
   #main-page section{
@@ -148,9 +149,14 @@
    ================ */
 
 body, html {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     margin: 0;
+    display: flex;
+    flex: auto;
+    flex-flow: wrap;
+    flex-direction: column;
+    font-size: 100%;
 }
 
 #contact-page h1{
