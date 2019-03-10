@@ -18,7 +18,7 @@ function generateMainPageHTML(){
         <div class="bio">
             <p>My name is Farah Gustafson, and I'm a web developer born and raised in Washington, D.C. I believe in collaborative work, big ideas, and open minds. </br></br>
 
-            In addition to my love for coding, my passions include anything that involves the outdoors, yoga,and reading good books. You can often find me exploring the great outdoors with my dog. </p>
+            In addition to my love for coding, my passions include anything that involves the outdoors, yoga, and reading good books. You can often find me exploring the great outdoors with my dog. </p>
         </div>
         <div class="clear"></div>
         </header>
