@@ -22,6 +22,13 @@ function generateMainPageHTML(){
         </div>
         <div class="clear"></div>
         </header>
+
+        <div id="arrow-container"> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.402 197.402" id="topArrow" class="topArrow">
+         <polygon style="fill:#fff;" points="146.883,197.402 45.255,98.698 146.883,0 152.148,5.418 56.109,98.698 152.148,191.98"/>
+        </svg>
+        </div>
+
         <section class="section1">
           <div class="image-text">
             <div class="app-description">
@@ -98,10 +105,31 @@ function handleReturnButton(){
   });
 }
 
+$(function() {
+  setTimeout('topArrow()');
+});
+  
+function topArrow() {
+  $('#topArrow').animate({
+    marginBottom: '-=15px'
+  }, 800).animate({
+    marginBottom: '+=15px'
+  }, 800);
+  setTimeout('topArrow()', 1600);
+}
+
+function handleScrollArrow(){
+  $('#topArrow').animate({
+    scrollTop: $('.image-text').offset().top
+  });
+}
+
 function main(){
   renderPortfolio();
   handleContactButton();
   handleReturnButton();
+  topArrow();
+  handleScrollArrow();
 }
 
 $(main);
