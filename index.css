@@ -46,39 +46,30 @@
   }
 
 #main-page h1{
-    font-size: 70px;
+    font-size: 90px;
     white-space: nowrap;
-    overflow: hidden;
+    /*overflow: hidden; */
     font-family: 'Inconsolata', monospace;
+    height: 150px;
   }
 
   .bio p{
       font-size: 15px;
       line-height: 1.6;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       width: 250px;
-      margin-top: 50px;
-  }
-
-  #typewriter{
-    height: 200px;
-    font-family: "Courier";
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+      margin-top: 10px;
   }
 
   .clear {
       clear: both;
   }
 
-  header{
+  #main-page header{
     background: linear-gradient(black, #585858);
     color: white; 
     font-size: 20px;
-    height: 580px;
+    height: 700px;
     padding-left: 50px;
   }
 

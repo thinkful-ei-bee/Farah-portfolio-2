@@ -83,7 +83,7 @@ function handleContactButton(){
 
 function handleReturnButton(){
   $('.container').on('mouseover', '.return', function () {
-    $(this).append('Return to projects');
+    $(this).append('Return to my projects');
   });
 
   $('.container').on('mouseout', '.return', function () {
