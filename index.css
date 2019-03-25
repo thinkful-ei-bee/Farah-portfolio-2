@@ -46,6 +46,13 @@ font-size: 13px;
 #main-page h1{
   font-size: 7vw;
   font-family: 'Inconsolata', monospace;
+  margin-bottom: 30px;
+  padding-top: 130px;
+  margin-top: 0px;
+}
+
+.bio p{
+  line-height: 30px;
 }
 
 @media (min-width: 300px){
@@ -135,9 +142,15 @@ bottom: 10px;
 margin-left: 10px;
 font-size: 1.5vw;
 }
-
 .see-code a:hover{
 text-decoration: underline;
+}
+
+.see-project{
+  position: absolute;
+  bottom: 40px;
+  margin-left: 10px;
+  font-size: 1.5vw;
 }
 
 .js-contact-button{
@@ -181,8 +194,6 @@ justify-content: center;
 }
 .left-pane{
 display: flex;
-align-items: center;
-justify-content: center;
 background: #202020;
 width: 100%;
 height: 30%;
@@ -190,6 +201,16 @@ color: white;
 font-size: 3vw;
 font-family: 'Inconsolata', monospace;
 }
+.contact-header{
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+.return-button{
+  align-self: flex-start;
+  color: white;
+}
+
 .right-pane{
 position: relative;
 width: 100%;
@@ -203,7 +224,6 @@ justify-content: center;
 height: 33.3333%;
 border-bottom: 1px solid black;
 color: white;
-/* font-size: 2vw; */
 font-family: 'Inconsolata', monospace;
 } 
 
@@ -222,6 +242,10 @@ font-family: 'Inconsolata', monospace;
   float: left;
   width: 40%;
   height: 100%;
+}
+.return-button{
+  display: flex;
+  align-self: flex-start;
 }
 .right-pane{
   float: right;
@@ -251,6 +275,3 @@ text-decoration: underline;
 color: white;
 }
 
-.return-button{
-align-self: flex-start;
-}

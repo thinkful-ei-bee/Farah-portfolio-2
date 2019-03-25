@@ -12,9 +12,7 @@ function generateMainPageHTML(){
      <button class="js-contact-button" type="button">Contact me</button></nav>
    
      <header role="banner">
-        <pre id="typewriter">
             <h1>Hello, </br>I'm Farah</h1>
-        </pre>
         <div class="bio">
             <p>My name is Farah Gustafson, and I'm a web developer born and raised in Washington, D.C. I believe in collaborative work, big ideas, and open minds. </br></br>
 
@@ -30,8 +28,10 @@ function generateMainPageHTML(){
               <p>Enjoy a short, but fun quiz of my favorite show, The Office.</p>
               <p>Technical stack: JS, HTML, CSS</p>
             </div>
+            
+
             <div class="see-code"><a href="https://github.com/thinkful-ei-bee/farah-donald-quiz-app">See code</div>
-            <a class="project-link" href="https://thinkful-ei-bee.github.io/farah-donald-quiz-app/"></a>
+            <div class="see-project"<a class="project-link" href="https://thinkful-ei-bee.github.io/farah-donald-quiz-app/">See Project</a></div>
            
           </div></section>
       </div>`;
@@ -41,9 +41,9 @@ function generateContactHTML(){
   return  `
     <div id="contact-page">
         <section class="left-pane">
-              <button type="button" class="return"> < </button>
+             <div class="return-button"><button type="button" class="return"> < </button></div>
            
-            <h1>Let's work together </h1>
+            <div class="contact-header"><h1>Let's work together </h1></div>
         </section>
 
         <section class="right-pane">
@@ -75,7 +75,6 @@ function handleContactButton(){
   $('.container').on('click', '.js-contact-button', event => {
     event.preventDefault();
     STORE.startPage = !STORE.startPage;
-
     renderPortfolio();
   });
 }
