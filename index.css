@@ -1,244 +1,256 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  }
-
-  a {
-    cursor: pointer;
-    text-decoration: none;
-  }
-
-/* ================
-   MAIN PAGE CSS
-   ================ */
-#main-page #container{
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
-  #main-page body {
-    font-family: "Open Sans";
-    font-size: 20px;
-  }
-
- nav{
-      background: none;
-      float: right;
-  }
-  
- nav p{
-      margin-right: 10px;
-      margin-top: 10px;
-      color: white;
-  }
-
-  nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-  }
-
-#main-page h1{
-    font-size: 90px;
-    white-space: nowrap;
-    padding-right: 20px;
-    font-family: 'Inconsolata', monospace;
-    height: 150px;
-  }
-
-  .bio p{
-      font-size: 18px;
-      line-height: 1.6;
-      letter-spacing: 0.5px;
-      width: 250px;
-      margin-top: 10px;
-  }
-
-  .clear {
-      clear: both;
-  }
-
-  #main-page header{
-    background: linear-gradient(black, #585858);
-    color: white; 
-    font-size: 20px;
-    height: 750px;
-    padding-left: 50px;
-    
-  }
-
-  #main-page section{
-      height: 350px;
-      padding-top: 30px;
-      border-top: 1px solid grey;
-  }
-
-  footer, section:nth-child(even) {
-    background-color: #ddd;
-  }
-
-  .project-link{
-    width: 0;
-    height: 0;
-    border-top: 45px solid transparent;
-    border-left: 70px solid black;
-    border-bottom: 45px solid transparent;
-    float: right;
-    margin-right: 50px;
-    margin-top: 10px;
-  }
-
-  #main-page a:hover{
-    transform: scale(1.1);
-  }
-
-  .section1{
-     background: url('./portfolio-images/theoffice.jpg') no-repeat; 
-      filter: grayscale(100%);
-      background-size : 100% auto;
-      opacity: 0.4;
-  }
-
-  .app-description{
-    width: fit-content;
-    margin-left: 30px;
-    font-family: 'Inconsolata', monospace;
-    line-height: 30px;
-    font-size: 3vw;
-  }
-
-  .see-code{
-    position: absolute;
-    bottom: 10px;
-    margin-left: 20px;
-    font-size: 3vw;
-  }
-
-  .see-code a:hover{
-    text-decoration: underline;
-  }
-
-  .js-contact-button{
-    margin-right: 20px;
-    margin-top: 10px;
-    background: none;
-    border: none; 
-    color: white; 
-    font-family: 'Inconsolata', monospace;
-    font-size: 20px;
-  }
-
-  .js-contact-button:hover{
-    cursor: pointer;
-  }
+a {
+cursor: pointer;
+text-decoration: none;
+}
 
 /* ================
-   CONTACT PAGE CSS
-   ================ */
+ MAIN PAGE CSS
+ ================ */
+nav{
+  background: none;
+  float: right;
+}
 
+nav p{
+  margin-right: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+nav a{
+text-decoration: none;
+color: white;
+font-size: 13px;
+}
+
+#main-page header{
+  background: linear-gradient(black, #585858);
+  color: white; 
+  font-size: 20px;
+  height: 750px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+@media(min-width: 400px){
+  #main-page header{padding-right: 100px;}
+}
+
+#main-page h1{
+  font-size: 7vw;
+  font-family: 'Inconsolata', monospace;
+}
+
+@media (min-width: 300px){
+  .bio p{
+    width: 100%;
+  }
+}
+@media (min-width: 600px){
+  .bio p{
+    width: 40%;
+  }
+}
+@media (min-width: 750px){
+  .bio p{
+    width: 35%;
+  }
+}
+@media (min-width: 950px){
+  .bio p{
+    width: 30%;
+  }
+}
+
+#main-page section{
+  display: flex;
+  height: 130px;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-top: 1px solid grey;
+}
+@media (min-width: 300px){
+#main-page section{height: 140px;}
+}
+@media (min-width: 600px){
+#main-page section{height: 200px;}
+}
+@media (min-width: 900px){
+#main-page section{height: 280px;}
+}
+@media (min-width: 1100px){
+#main-page section{height: 320px;}
+}
+
+#main-page a:hover{
+transform: scale(1.1);
+}
+
+.section1{
+display: flex;
+background: url('./portfolio-images/theoffice.jpg') no-repeat; 
+ /*filter: grayscale(100%);*/
+ background-size : 100%;
+ opacity: 0.4;
+}
+
+.app-description{
+font-family: 'Inconsolata', monospace;
+line-height: 30px;
+margin-left: 10px;
+width: 50%;
+font-size: 12px;
+line-height: 130%;
+}
+@media(min-width: 620px){
+.app-description{
+  line-height: 140%;
+}
+}
+@media(min-width: 620px){
+.app-description{
+  font-size: 2vw;
+}
+}
+@media(min-width: 715px){
+.app-description{
+  width: 80%;
+}
+}
+
+.image-text{
+position: relative;
+}
+
+.see-code {
+position: absolute;
+bottom: 10px;
+margin-left: 10px;
+font-size: 1.5vw;
+}
+
+.see-code a:hover{
+text-decoration: underline;
+}
+
+.js-contact-button{
+margin-right: 20px;
+margin-top: 10px;
+background: none;
+border: none; 
+color: white; 
+font-family: 'Inconsolata', monospace;
+font-size: 15px;
+}
+@media(min-width: 600px){
+.js-contact-button{
+  font-size: 20px;
+}
+}
+
+.js-contact-button:hover{
+cursor: pointer;
+}
+
+/* ================
+ CONTACT PAGE CSS
+ ================ */
 body, html {
-    margin: 0;
-    display: flex;
-    flex: auto;
-    flex-flow: wrap;
-    flex-direction: column;
-    font-size: 100%;
+margin: 0;
+font-size: 100%;
 }
 
 #contact-page h1{
-    margin-top: 250px;
-    margin-left: 100px;
-    font-size: 5vw;
-    font-family: 'Inconsolata', monospace;
+text-align: center;
+font-size: 5vw;
+font-family: 'Inconsolata', monospace;
 }
 
-
-#contact-page .left-pane{
-    background: #202020;
-    color: white;
-    height: 730px;
-    width: 40%;
-    float: left;
-    border-collapse: collapse;
+#contact-page{
+height: 100vh;
+display:flex;
+flex-wrap:wrap;
+justify-content: center;
 }
-
-#contact-page .right-pane{
-    background: green;
-    width: 60%;
-    height: 100%;
-    position: relative;
-    float: right;
-    border-collapse: collapse;
+.left-pane{
+display: flex;
+align-items: center;
+justify-content: center;
+background: #202020;
+width: 100%;
+height: 30%;
+color: white;
+font-size: 3vw;
+font-family: 'Inconsolata', monospace;
 }
+.right-pane{
+position: relative;
+width: 100%;
+height: 70%;
+}
+.email, .linkedin, .github{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 33.3333%;
+border-bottom: 1px solid black;
+color: white;
+/* font-size: 2vw; */
+font-family: 'Inconsolata', monospace;
+} 
 
-#contact-page .email, .linkedin, .github{
-    height: 243.3px;
-    line-height: 50px;
-    padding-top: 50px;
-    padding-left: 100px;
-    border-bottom: 1px solid black;
-    color: white;
-    font-size: 3vw;
-    font-family: 'Inconsolata', monospace;
+@media(min-width: 300px){
+  .email, .linkedin, .github{
+    font-size: 20px;
+  }
+}
+@media(min-width: 700px){
+  .email, .linkedin, .github{
+    font-size: 30px;
+  }
+}
+@media(min-width: 750px){
+.left-pane{
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+.right-pane{
+  float: right;
+  width: 60%;
+  height: 100%;
+}
 }
 
 .email{
-    background-color: #202020;
+background-color: #202020;
 }
 
 .linkedin{
-    background-color:#181818;
+background-color:#181818;
 }
 
 .github{
-    background-color: #282828;
+background-color: #282828;
 }
 
 #contact-page a {
-    color: grey;
-    text-decoration: none;
+color: grey;
+text-decoration: none;
 }
-
 #contact-page a:hover{
-    text-decoration: underline;
-    color: white;
+text-decoration: underline;
+color: white;
 }
 
-.return {
-    margin-left: 20px;
-    margin-top: 10px;
-    background: none;
-    border: none;
-    color: white;
-    font-family: 'Inconsolata', monospace;
-    font-size: 20px;
+.return-button{
+align-self: flex-start;
 }
-
-.return:hover {
-  cursor: pointer;
-} 
-
-/* #arrow-container {
-    width: 45px;
-    height: 45px;
-    margin: 50px auto;
-    position: absolute;
-    bottom: 0px; 
-    margin-left: 50%;
-  }
-  .topArrow {
-    fill: #fff;
-    transform: rotate(-90deg);
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    bottom: 20%;
-    margin: 0 0 0 -22px;
-  }
-   */

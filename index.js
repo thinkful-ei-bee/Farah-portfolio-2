@@ -13,7 +13,7 @@ function generateMainPageHTML(){
    
      <header role="banner">
         <pre id="typewriter">
-            <h1>Hello, </br> I'm Farah</h1>
+            <h1>Hello, </br>I'm Farah</h1>
         </pre>
         <div class="bio">
             <p>My name is Farah Gustafson, and I'm a web developer born and raised in Washington, D.C. I believe in collaborative work, big ideas, and open minds. </br></br>
@@ -49,7 +49,7 @@ function generateContactHTML(){
         <section class="right-pane">
             <div class="email"> 
                 <p>Email me</p>
-                <a class="email-link" href="mailto: farah.gus@hotmail.com">farah.gus@hotmail.com</a></div>
+                <a class="email-link" href="mailto: farah.gustafson@gmail.com">farah.gustafson@gmail.com</a></div>
             <div class="linkedin">
               <p>Find me on Linkedin</p>
               <a class="linkedin-link" href="https://www.linkedin.com/in/farah-gustafson-824496132/">Linkedin</a></div>
@@ -74,7 +74,6 @@ function renderPortfolio(){
 function handleContactButton(){
   $('.container').on('click', '.js-contact-button', event => {
     event.preventDefault();
-    console.log('contact button worked');
     STORE.startPage = !STORE.startPage;
 
     renderPortfolio();
